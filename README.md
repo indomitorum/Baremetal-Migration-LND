@@ -31,7 +31,7 @@ l0. Modify lnd.conf adding autounlock and deleting zmq from old umbrel lnd.conf
 13. chmod 600 /data/lnd/.password.tx
 15. Start lnd as lnd user
 16. Check lncli getinfo, might need reboot
-17. ### user admin - autostart on boot (follow raspibolt guide)
+17. ### User admin - autostart on boot (follow raspibolt guide)
 18. sudo systemctl enable lnd
 19. sudo systemctl start lnd
 20. systemctl status lnd
