@@ -7,7 +7,7 @@ Decide if you want to download a new blockchain copy, rsync from old node or jus
 
 # Old Node 
 
-1. Stop umbrel lnd. ~/umbrel/sudo scripts/stop. Check the bitcoin debug.log and lnd logs or sudo journalctl -f -u lnd to ensure it's been stopped.
+1. Stop umbrel lnd. ~/umbrel/sudo scripts/stop. sudo systemctl stop umbrel-startup. Check the bitcoin debug.log and lnd logs or sudo journalctl -f -u lnd to ensure it's been stopped.
 2. Keep a copy of old seed and channel.backup
 
 # New Node
