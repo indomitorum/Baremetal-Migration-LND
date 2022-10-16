@@ -1,7 +1,7 @@
 # Baremetal Migration | LND
 ## Umbrel (pre 0.5) to Baremetal LND Migration
 
-Follow the Raspibolt guide installing on new HW til wallet creation ( don't create the wallet ). Pay attention to system configuration, security, privacy and then bitcoin client and lightning client. Electrs is not needed in principle. This can be done with a NUC / Laptop / RPi. https://raspibolt.org/
+Follow the Raspibolt guide installing on new HW til wallet creation (don't create the wallet). Pay attention to system configuration, security, privacy and then bitcoin client and lightning client. Electrs is not needed in principle. This can be done with a NUC / Laptop / RPi. https://raspibolt.org/
 
 Decide if you want to download a new blockchain copy, rsync from old node or just use mv command to move ~/umbrel/bitcoin/blocks & ~/umbrel/bitcoin/chainstate from umbrel to /data/bitcoin. 
 
@@ -23,9 +23,9 @@ Decide if you want to download a new blockchain copy, rsync from old node or jus
 
 # New Node
 
-8. Remove tls files (tls.cert, tls.key), Tor cert (v3_onion_private_key) from /data/lnd and admin macaroon, macaroons.db, *macaroon: from /data/lnd/data/chain/bitcoin/mainnet
-9. Ensure correct ownership and permissions for lnd and bitcoin dirs : sudo chown -R lnd:lnd /data/lnd and sudo chown -R bitcoin:bitcoin /data/bitcoin 
-l0. Modify lnd.conf adding autounlock and deleting zmq from old umbrel lnd.conf
+8.  Remove tls files (tls.cert, tls.key), Tor cert (v3_onion_private_key) from /data/lnd and admin macaroon, macaroons.db, *macaroon: from /data/lnd/data/chain/bitcoin/mainnet
+9.  Ensure correct ownership and permissions for lnd and bitcoin dirs : sudo chown -R lnd:lnd /data/lnd and sudo chown -R bitcoin:bitcoin /data/bitcoin
+10. Modify lnd.conf adding autounlock and deleting zmq from old umbrel lnd.conf
 11. ### User lnd
 12. Create password.txt as .password.txt
 13. chmod 600 /data/lnd/.password.tx
