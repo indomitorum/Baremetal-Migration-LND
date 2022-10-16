@@ -3,7 +3,7 @@
 
 Follow the Raspibolt guide installing on new HW til wallet creation ( don't create the wallet ). Pay attention to system configuration, security, privacy and then bitcoin client and lightning client. Electrs is not needed in principle. This can be done with a NUC / Laptop / RPi. https://raspibolt.org/
 
-Decide if you want to download a new blockchain copy, rsync from old node or just use mv command to move from umbrel to /data/bitcoin. 
+Decide if you want to download a new blockchain copy, rsync from old node or just use mv command to move ~/umbrel/bitcoin/blocks & ~/umbrel/bitcoin/chainstate from umbrel to /data/bitcoin. 
 
 # Old Node 
 
